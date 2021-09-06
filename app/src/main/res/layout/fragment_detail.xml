@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.DetailActivity">
+
+    <!--  Free image : https://www.freeimages.com/photo/news-1317046 -->
+    <ImageView
+        android:id="@+id/detail_news_image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_news" />
+
+    <TextView
+        android:id="@+id/detail_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_news_image"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:text="@string/article_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_news_read_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_news_title"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="20dp"
+        android:text="@string/read_more"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <!--  Free image : https://freeiconshop.com/icon/share-icon-flat/ -->
+    <Button
+        android:id="@+id/detail_news_share"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/detail_news_read_more"
+        android:layout_centerInParent="true"
+        android:drawableStart="@drawable/ic_share_flat"
+        android:drawablePadding="2dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/social_share"
+        android:textSize="16sp" />
+
+</RelativeLayout>

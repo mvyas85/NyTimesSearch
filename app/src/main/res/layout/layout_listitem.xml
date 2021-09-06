@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <!--  Free image : https://www.freeimages.com/photo/news-1317046 -->
+    <ImageView
+        android:id="@+id/news_item_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_news" />
+
+    <TextView
+        android:id="@+id/news_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/news_item_image"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+</RelativeLayout>
